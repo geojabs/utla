@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selecione_um_animal"
+        android:textSize="22dp"
+        android:textColor="#000000"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_animal_hamster"
+            android:src="@drawable/animal_hamster"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentLeft="false"/>
+
+        <ImageView
+            android:id="@+id/img_animal_peixe"
+            android:src="@drawable/animal_peixe"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/img_animal_zebra"
+            android:src="@drawable/animal_zebra"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="25dp"
+            />
+
+        <ImageView
+            android:id="@+id/img_animal_periquito"
+            android:src="@drawable/animal_periquito"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

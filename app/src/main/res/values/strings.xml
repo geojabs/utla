@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UTLA</string>
+    <string name="titulo_principal">Uma TL anônima</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="escolhendo_um_nome_usuario">Escolhendo um nome de usuário aleatório...</string>
+    <string name="selecione_um_animal">Selecione um animal</string>
+    <string name="selecione_uma_cidade">Selecione uma cidade</string>
+</resources>
