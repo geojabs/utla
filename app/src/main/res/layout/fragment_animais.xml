@@ -14,31 +14,35 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
 
         <ImageView
             android:id="@+id/img_animal_hamster"
             android:src="@drawable/animal_hamster"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginTop="25dp"
-            android:layout_alignParentLeft="false"/>
+            android:layout_alignParentLeft="true"
+            android:tag="hamster"/>
 
         <ImageView
             android:id="@+id/img_animal_peixe"
             android:src="@drawable/animal_peixe"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginTop="25dp"
-            android:layout_alignParentRight="true"/>
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/img_animal_hamster"
+            android:tag="peixe"/>
 
         <ImageView
             android:id="@+id/img_animal_zebra"
             android:src="@drawable/animal_zebra"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginTop="25dp"
-            />
+            android:layout_below="@id/img_animal_hamster"
+            android:layout_marginLeft="10dp"
+            android:tag="zebra"/>
 
         <ImageView
             android:id="@+id/img_animal_periquito"
@@ -46,7 +50,10 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="25dp"
-            android:layout_alignParentRight="true"/>
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/img_animal_peixe"
+            android:layout_toRightOf="@id/img_animal_zebra"
+            android:tag="periquito"/>
 
     </RelativeLayout>
 
