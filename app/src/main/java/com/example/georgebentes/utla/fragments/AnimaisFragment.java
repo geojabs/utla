@@ -3,12 +3,15 @@ package com.example.georgebentes.utla.fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.georgebentes.utla.R;
+import com.example.georgebentes.utla.util.UtlaUtils;
 
 /**
  * Created by George Bentes on 06/02/2016.
@@ -41,10 +44,19 @@ public class AnimaisFragment extends Fragment {
         public void onClick(View v) {
             String animalSelecionado = v.getResources().getResourceName(v.getId());
             animalSelecionado = animalSelecionado.replace("com.example.georgebentes.utla:id/img_animal_", "");
+            animalSelecionado = UtlaUtils.capitalizar(animalSelecionado);
 
-            System.out.println("\n\n\nAnimal Selecionado >>>>>" + animalSelecionado + "\n\n\n\n");
+            Toast.makeText(getActivity(), "Selecionou: " + animalSelecionado, Toast.LENGTH_SHORT).show();
 
+            UtlaUtils.nomeUsuario = UtlaUtils.pegarVogais(animalSelecionado);
+
+            FragmentTransaction fragTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+            CidadesFragment cidadesFragment = new CidadesFragment();
+            fragTransaction.replace(R.id.main_layout, cidadesFragment);
+            fragTransaction.commit();
 
         }
     };
+
+
 }
