@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.georgebentes.utla.fragments.AnimaisFragment;
+import com.example.georgebentes.utla.fragments.TelaInicialFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         FragmentManager fragManager = getSupportFragmentManager();
         FragmentTransaction fragTransaction = fragManager.beginTransaction();
-        AnimaisFragment animaisFragment = new AnimaisFragment();
-        fragTransaction.add(R.id.main_layout, animaisFragment, "animaisFragment");
+        TelaInicialFragment telaInicialFragment = new TelaInicialFragment();
+        fragTransaction.add(R.id.activity_main_frame_layout, telaInicialFragment, "telaInicialFragment");
         fragTransaction.commit();
     }
 
