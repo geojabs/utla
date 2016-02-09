@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/banners_iniciais"
+        android:text="@string/criar_conta" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/inserir_usuario"
+        android:textColor="#ccc"
+        android:textColorHint="#ccc"
+        android:layout_marginTop="160dp">
+        <requestFocus/>
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/inserir_senha"
+        android:textColor="#ccc"
+        android:textColorHint="#ccc"
+        android:layout_marginTop="240dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:text="@string/bt_criar_conta"/>
+
+
+    <Button
+        android:id="@+id/bt_sugerir"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_gravity="bottom|left"
+        android:text="@string/bt_sugerir_nome_usuario"/>
+
+</FrameLayout>
