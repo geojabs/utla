@@ -51,8 +51,9 @@ public class AnimaisFragment extends Fragment {
             UtlaUtils.nomeUsuario = UtlaUtils.pegarVogais(animalSelecionado);
 
             FragmentTransaction fragTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+            fragTransaction.addToBackStack("animaisFragment");
             CidadesFragment cidadesFragment = new CidadesFragment();
-            fragTransaction.replace(R.id.main_layout, cidadesFragment);
+            fragTransaction.replace(R.id.activity_main_frame_layout, cidadesFragment);
             fragTransaction.commit();
 
         }
