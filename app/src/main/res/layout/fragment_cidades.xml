@@ -7,21 +7,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/selecione_uma_cidade"
-        android:textSize="22dp"
-        android:textColor="#000000"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#ccc"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"/>
+        android:layout_marginBottom="30dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="50dp">
 
         <ImageView
             android:id="@+id/img_cidade_blumenau"
             android:src="@drawable/cidade_blumenau"
-            android:layout_width="150dp"
+            android:layout_width="180dp"
             android:layout_height="150dp"
             android:layout_alignParentLeft="true"
             android:tag="hamster"/>
@@ -29,28 +30,29 @@
         <ImageView
             android:id="@+id/img_cidade_curitiba"
             android:src="@drawable/cidade_curitiba"
-            android:layout_width="150dp"
+            android:layout_width="190dp"
             android:layout_height="150dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/img_cidade_blumenau"
             android:tag="peixe"/>
 
         <ImageView
             android:id="@+id/img_cidade_manaus"
             android:src="@drawable/cidade_manaus"
-            android:layout_width="150dp"
+            android:layout_width="180dp"
             android:layout_height="150dp"
             android:layout_below="@id/img_cidade_blumenau"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
             android:tag="zebra"/>
 
         <ImageView
             android:id="@+id/img_cidade_natal"
             android:src="@drawable/cidade_natal"
-            android:layout_width="150dp"
+            android:layout_width="180dp"
             android:layout_height="150dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
             android:layout_below="@id/img_cidade_curitiba"
             android:layout_toRightOf="@id/img_cidade_manaus"
             android:tag="periquito"/>
