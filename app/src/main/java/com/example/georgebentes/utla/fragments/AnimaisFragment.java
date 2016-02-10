@@ -36,7 +36,10 @@ public class AnimaisFragment extends Fragment {
         imgPeixe.setOnClickListener(imgClickListener);
 
         imgZebra = (ImageView)view.findViewById(R.id.img_animal_zebra);
+        imgZebra.setOnClickListener(imgClickListener);
+
         imgPeriquito = (ImageView)view.findViewById(R.id.img_animal_periquito);
+        imgPeriquito.setOnClickListener(imgClickListener);
     }
 
     private View.OnClickListener imgClickListener = new View.OnClickListener() {
