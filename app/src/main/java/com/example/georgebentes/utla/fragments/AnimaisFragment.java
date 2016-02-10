@@ -40,6 +40,8 @@ public class AnimaisFragment extends Fragment {
 
         imgPeriquito = (ImageView)view.findViewById(R.id.img_animal_periquito);
         imgPeriquito.setOnClickListener(imgClickListener);
+
+        UtlaUtils.nomeUsuario = "";
     }
 
     private View.OnClickListener imgClickListener = new View.OnClickListener() {
