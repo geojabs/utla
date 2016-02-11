@@ -6,7 +6,30 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Todo mundo se conheece aqui"
-        android:textSize="22dp"/>
+        android:text="@string/resultado_nome_usuario"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#000"/>
+
+
+    <TextView
+        android:id="@+id/text_view_nome_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="#808080"
+        android:textStyle="italic"/>
+
+
+    <Button
+        android:id="@+id/bt_gerar_outro"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:text="@string/bt_gerar_outro"/>
 
 </FrameLayout>
