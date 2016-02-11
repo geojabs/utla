@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -7,35 +7,34 @@
 
     <TextView
         style="@style/banners_iniciais"
-        android:text="@string/criar_conta" />
+        android:text="@string/criando_uma_conta" />
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:hint="@string/inserir_usuario"
-        android:textColor="#ccc"
-        android:textColorHint="#ccc"
-        android:layout_marginTop="160dp">
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light">
         <requestFocus/>
     </EditText>
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:hint="@string/inserir_senha"
-        android:textColor="#ccc"
-        android:textColorHint="#ccc"
-        android:layout_marginTop="240dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="40dp"
         android:inputType="textPassword"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="80dp"
         android:text="@string/bt_criar_conta"/>
 
 
     <Button
+        android:visibility="gone"
         android:id="@+id/bt_sugerir"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
@@ -43,4 +42,4 @@
         android:layout_gravity="bottom|left"
         android:text="@string/bt_sugerir_nome_usuario"/>
 
-</FrameLayout>
+</LinearLayout>
