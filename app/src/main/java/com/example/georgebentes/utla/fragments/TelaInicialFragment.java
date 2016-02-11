@@ -5,11 +5,10 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.georgebentes.utla.R;
 
@@ -18,7 +17,7 @@ import com.example.georgebentes.utla.R;
  */
 public class TelaInicialFragment extends Fragment {
 
-    private Button btCriarConta;
+    private TextView linkCriarConta;
 
     @Nullable
     @Override
@@ -31,8 +30,8 @@ public class TelaInicialFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        btCriarConta = (Button)view.findViewById(R.id.bt_criar_conta);
-        btCriarConta.setOnClickListener(btClickListener);
+        linkCriarConta = (TextView)view.findViewById(R.id.bt_criar_conta);
+        linkCriarConta.setOnClickListener(clickListener);
 
         FragmentManager fManager = getFragmentManager();
         FragmentTransaction fTransaction = fManager.beginTransaction();
@@ -42,7 +41,7 @@ public class TelaInicialFragment extends Fragment {
     }
 
 
-    private View.OnClickListener btClickListener = new View.OnClickListener() {
+    private View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId())
