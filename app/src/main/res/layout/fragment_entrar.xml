@@ -11,8 +11,7 @@
         android:layout_marginTop="40dp"
         android:hint="@string/nome_usuario"
         android:gravity="center"
-        android:textColor="#ccc"
-        android:textColorHint="#ccc">
+        android:fontFamily="sans-serif-light">
         <requestFocus/>
     </EditText>
 
@@ -21,10 +20,9 @@
         android:layout_height="60dp"
         android:layout_marginTop="40dp"
         android:hint="@string/senha"
+        android:fontFamily="sans-serif-light"
         android:inputType="textPassword"
-        android:gravity="center"
-        android:textColor="#ccc"
-        android:textColorHint="#ccc" />
+        android:gravity="center"/>
 
     <Button
         android:layout_width="match_parent"
