@@ -3,6 +3,7 @@ package com.example.georgebentes.utla.fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,6 +55,12 @@ public class CidadesFragment extends Fragment {
             UtlaUtils.nomeUsuario += UtlaUtils.pegarConsoantes(cidadeSelecionada);
             UtlaUtils.nomeUsuario = UtlaUtils.gerarNomeUsuarioAleatorio();
             System.out.println(">>>>> NOME DO USUARIO GERADO:  " + UtlaUtils.nomeUsuario);
+
+            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+            fragmentTransaction.addToBackStack("animaisFragment");
+            ResultadoNomeUsuarioFragment result = new ResultadoNomeUsuarioFragment();
+            fragmentTransaction.replace(R.id.activity_main_frame_layout, result, "result");
+            fragmentTransaction.commit();
         }
     };
 }
