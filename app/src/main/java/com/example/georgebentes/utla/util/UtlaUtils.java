@@ -6,6 +6,7 @@ package com.example.georgebentes.utla.util;
 public class UtlaUtils {
 
     public static String nomeUsuario = "";
+    public static final String URL_SERVIDOR_API = "http://localhost:3000/utla-api-v1/";
 
     public static String capitalizar(String str){
         char myChar = str.charAt(0);
